@@ -1,0 +1,24 @@
+{
+  "name": "loan-calculator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "homepage": "https://ChishoTakemura.github.io/loan-calculator",
+  "dependencies": {
+    "gh-pages": "^2.1.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "deploy":"gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChishoTakemura/loan-calculator.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ChishoTakemura/loan-calculator/issues"
+  }
+}

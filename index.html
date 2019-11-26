@@ -9,6 +9,11 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <title>Loan Calculator</title>
+    <style>
+      #loading, #results {
+        display: none;
+      }
+    </style>
   </head>
   <body class="bg-dark">
     <div class="container">
@@ -16,7 +21,7 @@
         <div class="col-md-6 mx-auto">
           <div class="card card-body text-center mt-5">
             <h1 class="heading display-5 pb-3">Loan Calculator</h1>
-            <form  id="loan-form">
+            <form>
               <div class="form-group">
                 <div class="input-group">
                   <span class="input-group-text">$</span>
@@ -30,40 +35,39 @@
                 </div>
               </div>
               <div class="form-group">
-                <input type="text" class="form-control" id="year" placeholder="Years To Repay" >
+                <input type="text" class="form-control" id="years" placeholder="Years To Repay" >
               </div>
               <div class="form-group">
-                <input type="submit" value="Calculate" class="btn btn-dark btn-block">
+                <input type="submit" value="Calculate" class="btn btn-dark btn-block" id="loan-form">
               </div>
             </form>
-            <!-- LOADER HERE
             <div id="loading">
-              <img src="https://media.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif" alt="">
-            </div> -->
-            <!-- RESULT -->
+              <img src="https://media.giphy.com/media/y1ZBcOGOOtlpC/giphy.gif" alt="">
+            </div>
             <div id="results" class="pt-4">
               <h5>Results</h5>
-            </div>
+              <!-- Monthly-payment  -->
               <div class="form-group">
                 <div class="input-group">
                   <span class="input-group-text">Monthly Payment</span>
-                  <input type="number" class="form-control" id="monthly-payment" disabled>
+                  <input type="number" class="form-control" id="monthlyPayment" disabled>
                 </div>
               </div>
-
-                <div class="form-group">
-                  <div class="input-group">
-                    <span class="input-group-text">Total Payment</span>
-                    <input type="number" class="form-control" id="total-payment" disabled>
-                  </div>
+              <!-- Total Payment  -->
+              <div class="form-group">
+                <div class="input-group">
+                  <span class="input-group-text">Total Payment</span>
+                  <input type="number" class="form-control" id="totalPayment" disabled>
                 </div>
-
-                <div class="form-group">
-                    <div class="input-group">
-                      <span class="input-group-text">Total Interest</span>
-                      <input type="number" class="form-control" id="total-interest" disabled>
-                    </div>
-                  </div>
+              </div>
+              <!-- Total Interest  -->
+              <div class="form-group">
+                <div class="input-group">
+                  <span class="input-group-text">Total Interest</span>
+                  <input type="number" class="form-control" id="totalInterest" disabled>
+                </div>
+              </div>
+              </div>
 
           </div>
         </div>
